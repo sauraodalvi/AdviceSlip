@@ -1,0 +1,12 @@
+/* Add your custom CSS styles here */
+.btn {
+  @apply inline-flex items-center justify-center rounded-md bg-transparent px-4 py-2 font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none;
+}
+
+.btn-outline {
+  @apply border border-input hover:bg-accent hover:text-accent-foreground;
+}
+
+.btn-icon {
+  @apply p-0;
+}
