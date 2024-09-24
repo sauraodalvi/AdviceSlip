@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advice Slip UI</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="min-h-screen bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center p-4">
+    <div class="w-full max-w-md bg-white/90 backdrop-blur-md shadow-xl rounded-xl overflow-hidden">
+      <div class="pb-2">
+        <h1 class="text-2xl font-bold text-center text-primary">Advice Slip</h1>
+        <p class="text-center text-muted-foreground">
+          Discover and search for wisdom from over 10 million advice
+        </p>
+      </div>
+      <div class="p-6 pt-2">
+        <div class="flex mb-4">
+          <input type="text" placeholder="Search for advice..." class="flex-grow mr-2" id="search-input">
+          <button class="btn btn-outline" id="search-btn">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="relative h-48 overflow-hidden bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+          <p class="text-lg font-medium text-primary" id="advice-text"></p>
+        </div>
+        <div class="flex justify-between">
+          <button class="btn btn-outline btn-icon" id="prev-btn" disabled>
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </button>
+          <button class="btn btn-outline btn-icon" id="refresh-btn">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 4 23 10 17 10"></polyline>
+              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+            </svg>
+          </button>
+          <button class="btn btn-outline btn-icon" id="next-btn" disabled>
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+        <div class="mt-4 text-center text-sm text-muted-foreground" id="search-status"></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
